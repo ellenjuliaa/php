@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <title>Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulário</h2>
+    <form action="/acao/cadastro_usuario_acao.php" method="POST">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+      </div>
+      <div class="form-group">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="nao_declarado">Não Declarado</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="usuario">Nome de Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="text" id="senha" name="senha" required>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
